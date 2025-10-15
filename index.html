@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 🌸 Música de fondo -->
+    <audio id="bg-music" src="musica.mp3" loop></audio>
+
+    <!-- 🌸 Pantalla de inicio -->
+    <div id="start-screen">
+        <img src="portada.jpg" alt="Portada">
+    </div>
+
+    <!-- 🌸 Pantalla de enunciado -->
+    <div id="enunciado-screen" class="hidden">
+        <img src="enunciado.jpg" alt="Enunciado">
+    </div>
+
+    <!-- 🌸 Juego principal -->
+    <div id="game-wrapper" class="hidden">
+        <img id="tower" src="torre.png" alt="Tower">
+        <div id="maze-container"></div>
+
+        <!-- 🎮 Controles -->
+        <div id="controls">
+            <div class="row up-row">
+                <button id="up" class="control-btn">↑</button>
+            </div>
+            <div class="row middle-row">
+                <button id="left" class="control-btn">←</button>
+                <button id="down" class="control-btn">↓</button>
+                <button id="right" class="control-btn">→</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🌸 Pantalla de victoria -->
+    <div id="win-screen" class="hidden" style="text-align: center;">
+        <img id="fin-image" src="fin.jpg" alt="Fin" class="hidden">
+        <img id="princesa-image" src="princesa.jpg" alt="Princesa" class="hidden">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
